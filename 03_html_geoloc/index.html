@@ -4,14 +4,24 @@
         <meta charset="UTF-8">
         <title>TP HTML - Géolocalisation</title>
         <script>
+            function myLocation(position){
+                alert('Latitude'+position.coords.latitude+' Longitude'+position.coords.longitude+' Altitude'+position.coords.altitude);
+            }
             if(navigator.geolocation){
-                alert('L\'API de géolocalisation en HTML 5 est disponible');
+                //alert('L\'API de géolocalisation en HTML 5 est disponible');
+                navigator.geolocation.getCurrentPosition(myLocation);
             }
             else{
                 alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
             }
         </script>
     </head>
-    <body> 
+    <body>
+        <div id="geolocation">
+            
+        </div>
     </body>
 </html>
+
+
+position.coords.latitude
