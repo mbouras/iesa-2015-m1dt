@@ -5,7 +5,12 @@
         <title>TP HTML - Géolocalisation</title>
         <script>
             function myLocation(position){
-                alert('Latitude'+position.coords.latitude+' Longitude'+position.coords.longitude+' Altitude'+position.coords.altitude);
+                var geoInfos = "Ma position : <br/>";
+                geoInfos += 'Latitude : '+position.coords.latitude;
+                geoInfos += ' Longitude : '+position.coords.longitude;
+                geoInfos += ' Altitude : '+position.coords.altitude;
+                
+                document.getElementById("geolocation").innerHTML = geoInfos;
             }
             if(navigator.geolocation){
                 //alert('L\'API de géolocalisation en HTML 5 est disponible');
@@ -18,10 +23,7 @@
     </head>
     <body>
         <div id="geolocation">
-            
+            Zone présentant les informations de géolocalisation
         </div>
     </body>
 </html>
-
-
-position.coords.latitude
