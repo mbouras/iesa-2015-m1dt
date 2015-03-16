@@ -9,12 +9,16 @@
                 geoInfos += "Latitude : "+position.coords.latitude;
                 geoInfos += " Longitude : "+position.coords.longitude;
                 geoInfos += " Altitude : "+position.coords.altitude;
+                geoInfos += " Vitesse : "+position.coords.speed;
                 
                 document.getElementById("geolocation").innerHTML = geoInfos;
             }
+
+
             if(navigator.geolocation){
                 //alert('L\'API de géolocalisation en HTML 5 est disponible');
-                navigator.geolocation.getCurrentPosition(myLocation);
+                //navigator.geolocation.getCurrentPosition(myLocation);
+                navigator.geolocation.watchPosition(myLocation);
             }
             else{
                 alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
