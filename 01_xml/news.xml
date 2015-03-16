@@ -1,0 +1,40 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<newss>
+    <news>
+        <title>
+            Titre de l'actu
+        </title>
+        <description>
+            Ici la description
+        </description>
+        <link>
+            Un petit lien
+        </link>
+        <items>
+            <item>
+                <title>
+                    Titre 2
+                </title>
+                <description>
+                    Description 2
+                </description>
+                <link>
+                    Lien 2
+                </link>
+            </item>
+        </items>
+    </news>
+    <news>
+        <title>
+            Nouvelle news
+        </title>
+        <description>
+            Sans item
+        </description>
+        <link>
+            Et le lien qui va avec
+        </link>
+    </news>
+</newss>
+
