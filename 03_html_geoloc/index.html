@@ -6,9 +6,9 @@
         <script>
             function myLocation(position){
                 var geoInfos = "Ma position : <br/>";
-                geoInfos += 'Latitude : '+position.coords.latitude;
-                geoInfos += ' Longitude : '+position.coords.longitude;
-                geoInfos += ' Altitude : '+position.coords.altitude;
+                geoInfos += "Latitude : "+position.coords.latitude;
+                geoInfos += " Longitude : "+position.coords.longitude;
+                geoInfos += " Altitude : "+position.coords.altitude;
                 
                 document.getElementById("geolocation").innerHTML = geoInfos;
             }
