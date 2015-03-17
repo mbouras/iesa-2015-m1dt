@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>TP HTML - Géolocalisation</title>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=set_to_true_or_false"></script>
         <script>
             function myLocation(position){
                 var geoInfos = "Ma position : <br/>";
@@ -12,6 +13,7 @@
                 geoInfos += " Vitesse : "+position.coords.speed;
                 
                 document.getElementById("geolocation").innerHTML = geoInfos;
+                var map = new google.maps.Map(document.getElementById("map"), optionsGmaps);
             }
             function displayError(error){
                 var info = "Erreur lors de la géolocalisation : ";
@@ -33,11 +35,22 @@
                 alert(info+"   "+error.message);
             }
 
-
             if(navigator.geolocation){
                 //alert('L\'API de géolocalisation en HTML 5 est disponible');
                 navigator.geolocation.getCurrentPosition(myLocation, displayError);
                 //navigator.geolocation.watchPosition(myLocation);
+
+   
+                //Position par défaut
+                var centerpos = new google.maps.LatLng(48.579400, 7.7519);
+                //Infos relatives carte
+                var optionsGmaps = {
+                    center: centerpos,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    zoom : 15
+                };
+                //Initialisation carte
+                var map;
             }
             else{
                 alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
@@ -48,5 +61,6 @@
         <div id="geolocation">
             Zone présentant les informations de géolocalisation
         </div>
+        <div id="map" style="width:500px; height:400px;"></div>
     </body>
 </html>
