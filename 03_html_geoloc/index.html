@@ -13,12 +13,15 @@
                 
                 document.getElementById("geolocation").innerHTML = geoInfos;
             }
+            function displayError(erreur){
+                alert(erreur.message);
+            }
 
 
             if(navigator.geolocation){
                 //alert('L\'API de géolocalisation en HTML 5 est disponible');
-                //navigator.geolocation.getCurrentPosition(myLocation);
-                navigator.geolocation.watchPosition(myLocation);
+                navigator.geolocation.getCurrentPosition(myLocation, displayError);
+                //navigator.geolocation.watchPosition(myLocation);
             }
             else{
                 alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
