@@ -25,6 +25,8 @@ h1{
 }
 h2{
     margin-top: 60px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
 }
 h3{
     text-indent: 25px;
