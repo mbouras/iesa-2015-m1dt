@@ -1,5 +1,10 @@
+@font-face{
+    font-family: 'Lato';
+    src: url('Lato/Lato-Regular.ttf') format('trueType');
+}
+
 div{
-    font-family: Arial;
+    font-family: 'Lato', Arial;
 }
 a{
     color: purple;
