@@ -13,7 +13,23 @@
                 geoInfos += " Vitesse : "+position.coords.speed;
                 
                 document.getElementById("geolocation").innerHTML = geoInfos;
+
+                //Position par défaut
+                //var centerpos = new google.maps.LatLng(48.579400, 7.7519);
+                var centerpos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                //Infos relatives carte
+                var optionsGmaps = {
+                    center: centerpos,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    zoom : 15
+                };
                 var map = new google.maps.Map(document.getElementById("map"), optionsGmaps);
+                //Marker Maps
+                var marker = new google.maps.Marker({
+                    position: centerpos,
+                    map: map,
+                    title: "Vous êtes ici"
+                });
             }
             function displayError(error){
                 var info = "Erreur lors de la géolocalisation : ";
@@ -39,18 +55,6 @@
                 //alert('L\'API de géolocalisation en HTML 5 est disponible');
                 navigator.geolocation.getCurrentPosition(myLocation, displayError);
                 //navigator.geolocation.watchPosition(myLocation);
-
-   
-                //Position par défaut
-                var centerpos = new google.maps.LatLng(48.579400, 7.7519);
-                //Infos relatives carte
-                var optionsGmaps = {
-                    center: centerpos,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    zoom : 15
-                };
-                //Initialisation carte
-                var map;
             }
             else{
                 alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
