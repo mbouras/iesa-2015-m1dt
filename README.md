@@ -1,2 +1,4 @@
-# iesa-2015-m1dt
-# iesa-2015-m1dt
+# Javascript
+
+* Google Map : mettre des dimensions dans la DIV
+* Google Map : penser à mettre les variables au plus près de là où elles sont utilisées
