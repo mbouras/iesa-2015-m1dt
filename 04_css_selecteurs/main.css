@@ -3,6 +3,8 @@
     src: url('Lato/Lato-Regular.ttf') format('trueType');
 }
 
+
+
 div{
     font-family: 'Lato', Arial;
 }
@@ -10,6 +12,17 @@ a{
     color: purple;
     text-decoration: none; 
 }
+/*Descendant*/
+li span cite{
+    color: darkorchid;
+}
+/*Groupe*/
+h1, h2, h3{
+    text-transform: uppercase;
+}
+
+
+
 #content{
     background-color: rgba(0,0,255,0.1);
 }
@@ -20,11 +33,15 @@ a{
 ul.bandeau-portail{
     background-color: #ccc;
 }
-/*Descendant*/
-li span cite{
-    color: darkorchid;
+
+.mw-editsection a{
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
 }
-/*Groupe*/
-h1, h2, h3{
-    text-transform: uppercase;
+.mw-editsection-bracket, .mw-editsection-divider{
+    font-size:0.6em;
+    font-weight: normal;
+    font-style: italic;
 }
