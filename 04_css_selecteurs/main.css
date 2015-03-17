@@ -20,10 +20,17 @@ li span cite{
 h1, h2, h3{
     text-transform: uppercase;
 }
-
+h1{
+    text-align: center;
+}
+h3{
+    text-indent: 25px;
+}
 
 
 #content{
+    width: 70%;
+    margin: 0 auto;
     background-color: rgba(0,0,255,0.1);
 }
 .thumb{
@@ -44,4 +51,8 @@ ul.bandeau-portail{
     font-size:0.6em;
     font-weight: normal;
     font-style: italic;
+}
+.mw-normal-catlinks{
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
 }
