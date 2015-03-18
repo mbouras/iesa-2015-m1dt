@@ -23,7 +23,15 @@
         var playerTwo = 600;
 
         var highScore;
-
+        
+        //--> version if
+        if(playerOne > playerTwo){
+            highScore = playerOne;
+        }
+        else{
+            highScore = playerTwo;
+        }
+        //--> version operateur ternaire
         var highScore = (playerOne > playerTwo) ? playerOne : playerTwo;
         alert(highScore);
 
