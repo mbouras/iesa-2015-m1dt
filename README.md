@@ -5,5 +5,13 @@
 
 * Incrémentation : a++ ne retourne pas le résultat de l'incrémentation. Il retourne la valeur de a initiale, puis il l'incrémente.
 
+# Console
+* Commandes sur la console du navigateur : 
+    console.log
+            .error
+            .warn
+            .info
+            .debug
+
 
 http://daringfireball.net/projects/markdown/syntax
