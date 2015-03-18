@@ -5,11 +5,22 @@
         <title>TP Javascript : Fonctions</title>
         <script type="text/javascript">
 
-        function displayMessage(message){
-            console.log(message);
+        function displayMessage(){
+            console.log("bonjour");
         }
+        //displayMessage();
 
-        displayMessage("bonjour");
+        function soisPoli(){
+            console.log("M dit : Bonjour");
+            displayMessage();
+        }
+        //soisPoli();
+
+        function disMerci(){
+            console.log("Merci");
+            soisPoli();
+        }
+        disMerci();
 
         </script>
     </head>
