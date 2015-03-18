@@ -9,7 +9,9 @@
 ** While : "tant que…"
 Penser à incrémenter pour pas faire de boucle infinie.
 Penser à mettre à jour les variables qui sont testées car le while garde la dernière valeur définie avant d'entrer dans la boucle (cf exo 04 - TP JS) 
-** For : je respecte le contrat de A à Z, je fais toutes les étapes (ex: de 1 à 10). 
+** For : je respecte le contrat de A à Z, je fais toutes les étapes (ex: de 1 à 10).
+
+* Return : Aucun code n'est lu après l'appel d'un return (dans une fonction ou autre)
 
 # Console
 * Commandes sur la console du navigateur : 
