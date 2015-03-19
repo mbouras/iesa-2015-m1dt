@@ -21,8 +21,8 @@ $news2['description'] = 'Internet Explorer, le navigateur qui fut roi pendant de
 
 function buildHtmlForNews($table){
     return
-        '<ul>
-            <li>'.$table['title'].'</li>'.
+        '<ul>'.
+            '<li>'.$table['title'].'</li>'.
             '<li>'.$table['link'].'</li>'.
             '<li>'.$table['pubDate'].'</li>'.
             '<li>'.$table['description'].'</li>'.
@@ -44,6 +44,17 @@ function buildTableForNews($table){
                 <td>'.$table['description'].'</td>
             </tr>';
 }
+function buildRow($table){
+    $line = '<ul>';
+    foreach ($table as $value) {
+        $line .= '<li>'.$value.'</li>';
+    }
+    $line .= '</ul>';
+    return $line;
+}
+function displayRow($table){
+    echo buildRow($table);
+}
 
 ?>
 
@@ -56,7 +67,8 @@ function buildTableForNews($table){
     <body>
         <?php 
             echo buildHtmlForNews($news1);
-            echo buildTableForNews($news2);
+            //echo buildTableForNews($news2);
+            echo buildRow($news1);
         ?>
     </body>
 </html>
