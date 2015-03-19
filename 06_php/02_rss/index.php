@@ -11,8 +11,7 @@ $news2['link'] = 'http://www.presse-citron.net/microsoft-annonce-la-mort-dintern
 $news2['pubDate'] = 'Wed, 18 Mar 2015 22:30:30 +0000';
 $news2['description'] = 'Internet Explorer, le navigateur qui fut roi pendant des années devrait disparaître à petit feu et être remplacé par un nouveau navigateur.';
 
-
-// $newss = array($news1, $news2);
+$newss = array($news1, $news2);
 
 //var_dump($news);;
 
@@ -43,13 +42,22 @@ function buildTableForNews($table){
         </table>';
 }
 function buildHtmlRowFor($news, $wantedProperties){
-    $line = '<ul>';
+    $line = '<tr>';
     foreach ($wantedProperties as $value) {
-        $line .= '<li>'.$news[$value].'</li>';
+        $line .= '<td>'.$news[$value].'</td>';
     }
-    $line .= '</ul>';
+    $line .= '</tr>';
     return $line;
 }
+function buildHtmlTableFor($newss, $wantedProperties){
+    $table = '<table>';
+    foreach ($newss as $value) {
+        $table .= buildHtmlRowFor($value, $wantedProperties);
+    }
+    $table .= '</table>';
+    return $table;
+}
+
 
 ?>
 
@@ -71,7 +79,7 @@ function buildHtmlRowFor($news, $wantedProperties){
         <h2>News avec un foreach</h2>
         <?php
             $wantedProperties = array('title', 'pubDate' );
-            echo buildHtmlRowFor($news1, $wantedProperties);
+            echo buildHtmlTableFor($newss, $wantedProperties);
         ?>
     </body>
 </html>
