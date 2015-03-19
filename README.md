@@ -18,6 +18,10 @@ Penser à mettre à jour les variables qui sont testées car le while garde la d
 #PHP
 * Global : va chercher une variable en dehors de la function. Définit une variable comme "globale".
 * variable dynamique : variable d'une variable ($$variable);
+* Types données
+  * 4 scalaires : boolean, integer, float, string
+  * 2 composés : array, object
+  * 2 speciaux : resource, null
 
 
 # Console

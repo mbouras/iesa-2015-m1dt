@@ -13,7 +13,12 @@
     $a = "bonjour";
     $$a = "monde";
 
-    echo $a;
+    echo $a."<br />";
+    echo $$a."<br />";
+    echo $bonjour."<br />";
 
-    echo $$a;
+
+    //define("AIRPLANE", "D112");
+    const AIRPLANE = "D112";
+    echo AIRPLANE;
 ?>
