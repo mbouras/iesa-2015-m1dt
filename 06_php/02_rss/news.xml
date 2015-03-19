@@ -1,0 +1,122 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<item>
+    <title>
+    Que diriez-vous d’explorer le centre de la Terre depuis votre navigateur ?
+    </title>
+    <link>
+    http://www.presse-citron.net/que-diriez-vous-dexplorer-le-centre-de-la-terre-depuis-votre-navigateur/
+    </link>
+    <comments>
+    http://www.presse-citron.net/que-diriez-vous-dexplorer-le-centre-de-la-terre-depuis-votre-navigateur/#comments
+    </comments>
+    <pubDate>Thu, 19 Mar 2015 08:41:20 +0000</pubDate>
+    <dc:creator>
+    <![CDATA[ Fredzone ]]>
+    </dc:creator>
+    <category>
+    <![CDATA[ Web ]]>
+    </category>
+    <category>
+    <![CDATA[ BBC ]]>
+    </category>
+    <category>
+    <![CDATA[ CSS ]]>
+    </category>
+    <category>
+    <![CDATA[ HTML ]]>
+    </category>
+    <guid isPermaLink="false">http://www.presse-citron.net/?p=129120</guid>
+    <description>
+    <![CDATA[
+    La BBC vous invite à prendre votre casque et votre marteau piqueur, pour vous lancer dans une belle épopée virtuelle et stylisée.
+    ]]>
+    </description>
+    <wfw:commentRss>
+    http://www.presse-citron.net/que-diriez-vous-dexplorer-le-centre-de-la-terre-depuis-votre-navigateur/feed/
+    </wfw:commentRss>
+    <slash:comments>3</slash:comments>
+    La BBC vous invite à prendre votre casque et votre marteau piqueur, pour vous lancer dans une belle épopée virtuelle et stylisée.
+</item>
+<item>
+    <title>Microsoft annonce la mort d’Internet Explorer</title>
+    <link>
+    http://www.presse-citron.net/microsoft-annonce-la-mort-dinternet-explorer-son-celebre-navigateur/
+    </link>
+    <comments>
+    http://www.presse-citron.net/microsoft-annonce-la-mort-dinternet-explorer-son-celebre-navigateur/#comments
+    </comments>
+    <pubDate>Wed, 18 Mar 2015 22:30:30 +0000</pubDate>
+    <dc:creator>
+    <![CDATA[ Manu ]]>
+    </dc:creator>
+    <category>
+    <![CDATA[ Navigateurs ]]>
+    </category>
+    <category>
+    <![CDATA[ Internet Explorer ]]>
+    </category>
+    <category>
+    <![CDATA[ Microsoft ]]>
+    </category>
+    <category>
+    <![CDATA[ mort-internet-explorer ]]>
+    </category>
+    <category>
+    <![CDATA[ navigateur internet ]]>
+    </category>
+    <guid isPermaLink="false">http://www.presse-citron.net/?p=129079</guid>
+    <description>
+    <![CDATA[
+    Internet Explorer, le navigateur qui fut roi pendant des années devrait disparaître à petit feu et être remplacé par un nouveau navigateur.
+    ]]>
+    </description>
+    <wfw:commentRss>
+    http://www.presse-citron.net/microsoft-annonce-la-mort-dinternet-explorer-son-celebre-navigateur/feed/
+    </wfw:commentRss>
+    <slash:comments>6</slash:comments>
+    Internet Explorer, le navigateur qui fut roi pendant des années devrait disparaître à petit feu et être remplacé par un nouveau navigateur.
+</item>
+<item>
+    <title>
+    Microsoft : avec ou sans licence, vous aurez droit à la mise à jour gratuite vers Windows 10
+    </title>
+    <link>
+    http://www.presse-citron.net/microsoft-avec-ou-sans-licence-vous-aurez-droit-a-la-mise-a-jour-gratuite-vers-windows-10/
+    </link>
+    <comments>
+    http://www.presse-citron.net/microsoft-avec-ou-sans-licence-vous-aurez-droit-a-la-mise-a-jour-gratuite-vers-windows-10/#comments
+    </comments>
+    <pubDate>Wed, 18 Mar 2015 18:11:02 +0000</pubDate>
+    <dc:creator>
+    <![CDATA[ Setra ]]>
+    </dc:creator>
+    <category>
+    <![CDATA[ Tech & Gadgets ]]>
+    </category>
+    <category>
+    <![CDATA[ gratuit ]]>
+    </category>
+    <category>
+    <![CDATA[ mise à jour ]]>
+    </category>
+    <category>
+    <![CDATA[ piratage ]]>
+    </category>
+    <category>
+    <![CDATA[ Windows 10 ]]>
+    </category>
+    <guid isPermaLink="false">http://www.presse-citron.net/?p=129088</guid>
+    <description>
+    <![CDATA[
+    Microsoft souhaite vous remettre sur le droit chemin.
+    ]]>
+    </description>
+    <wfw:commentRss>
+    http://www.presse-citron.net/microsoft-avec-ou-sans-licence-vous-aurez-droit-a-la-mise-a-jour-gratuite-vers-windows-10/feed/
+    </wfw:commentRss>
+    <slash:comments>4</slash:comments>
+    Microsoft souhaite vous remettre sur le droit chemin.
+</item>
+</channel>
+</rss>
