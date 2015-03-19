@@ -28,6 +28,22 @@ function buildHtmlForNews($table){
             '<li>'.$table['description'].'</li>'.
         '</ul>';
 }
+function buildTableForNews($table){
+    return
+        '<table>
+            <tr>
+                <td>TITLE</td>
+                <td>LINK</td>
+                <td>PUBDATE</td>
+                <td>DESCRIPTION</td>
+            </tr>
+            <tr>
+                <td>'.$table['title'].'</td>
+                <td>'.$table['link'].'</td>
+                <td>'.$table['pubDate'].'</td>
+                <td>'.$table['description'].'</td>
+            </tr>';
+}
 
 ?>
 
@@ -40,7 +56,7 @@ function buildHtmlForNews($table){
     <body>
         <?php 
             echo buildHtmlForNews($news1);
-            echo buildHtmlForNews($news2);
+            echo buildTableForNews($news2);
         ?>
     </body>
 </html>
