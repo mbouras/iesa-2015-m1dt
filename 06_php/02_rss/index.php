@@ -44,16 +44,16 @@ function buildTableForNews($table){
                 <td>'.$table['description'].'</td>
             </tr>';
 }
-function buildRow($table){
+function buildHtmlRowFor($news){
     $line = '<ul>';
-    foreach ($table as $value) {
+    foreach ($news as $value) {
         $line .= '<li>'.$value.'</li>';
     }
     $line .= '</ul>';
     return $line;
 }
-function displayRow($table){
-    echo buildRow($table);
+function displayRow($news){
+    echo buildHtmlRowFor($news);
 }
 
 ?>
@@ -68,7 +68,7 @@ function displayRow($table){
         <?php 
             echo buildHtmlForNews($news1);
             //echo buildTableForNews($news2);
-            echo buildRow($news1);
+            echo displayRow($news1);
         ?>
     </body>
 </html>
