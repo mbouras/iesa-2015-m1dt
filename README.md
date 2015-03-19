@@ -22,6 +22,7 @@ Penser à mettre à jour les variables qui sont testées car le while garde la d
   * 4 scalaires : boolean, integer, float, string
   * 2 composés : array, object
   * 2 speciaux : resource, null
+* Incrémentation : .=
 
 
 # Console
