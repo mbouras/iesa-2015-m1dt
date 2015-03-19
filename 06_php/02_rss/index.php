@@ -12,10 +12,7 @@ $news2['pubDate'] = 'Wed, 18 Mar 2015 22:30:30 +0000';
 $news2['description'] = 'Internet Explorer, le navigateur qui fut roi pendant des années devrait disparaître à petit feu et être remplacé par un nouveau navigateur.';
 
 
-// $news = array(
-//     'firstNews' => $news1,
-//     'secondNews' => $news2 
-// );
+// $newss = array($news1, $news2);
 
 //var_dump($news);;
 
@@ -45,16 +42,13 @@ function buildTableForNews($table){
             </tr>
         </table>';
 }
-function buildHtmlRowFor($news){
+function buildHtmlRowFor($news, $wantedProperties){
     $line = '<ul>';
-    foreach ($news as $value) {
-        $line .= '<li>'.$value.'</li>';
+    foreach ($wantedProperties as $value) {
+        $line .= '<li>'.$news[$value].'</li>';
     }
     $line .= '</ul>';
     return $line;
-}
-function displayRow($news){
-    echo buildHtmlRowFor($news);
 }
 
 ?>
@@ -76,7 +70,8 @@ function displayRow($news){
         ?>
         <h2>News avec un foreach</h2>
         <?php
-            echo displayRow($news1);
+            $wantedProperties = array('title', 'pubDate' );
+            echo buildHtmlRowFor($news1, $wantedProperties);
         ?>
     </body>
 </html>
