@@ -15,5 +15,15 @@
             <input type="text" name="surname" value="" placeholder="Prenom"/>
             <input type="submit" value="Envoyer">
         </form>
+        <p>
+            <?php 
+                if(isset($_GET['surname'])){
+                    echo 'Bienvenue '.$_GET['surname'];
+                } 
+                if(isset($_GET['name'])){
+                    echo ' '.$_GET['name'];
+                }
+            ?>
+        </p>
     </body>
 </html>

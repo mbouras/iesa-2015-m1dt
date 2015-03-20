@@ -1,11 +1,15 @@
 <?php
-$name = htmlspecialchars($_POST['name']);
-$surname = htmlspecialchars($_POST['surname']);
+    $name = htmlspecialchars($_POST['name']);
+    $surname = htmlspecialchars($_POST['surname']);
 
 
-if(isset($name) && isset($surname)){
-    echo "Bonjour ".$surname." ".$name;
-}
+    // if(isset($name) && isset($surname)){
+    //     echo "Bonjour ".$surname." ".$name;
+    // }
+
+    if(isset($name) && isset($surname)){
+        header('Location: index.php?name='.$name.'&surname='.$surname);
+    }
 
 ?>
 
