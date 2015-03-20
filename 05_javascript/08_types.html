@@ -23,6 +23,40 @@
         console.log(title.slice(1, 6));
         console.log(title.substring(1, 6));
 
+        //DATES
+        var date01 = new Date();
+        var date02 = new Date(1993,2,31);
+        var date03 = new Date(2011,5,20,0,8,30,0,0);
+        console.log("date 1 : "+date01);
+        console.log("date 2 : "+date02);
+        console.log("date 3 : "+date03);
+
+        console.log("mois "+date01.getMonth());
+        console.log("mois "+date02.getMonth());
+        console.log("mois "+date03.getMonth());
+
+        console.log("year "+date01.getFullYear());
+        console.log("year "+date02.getFullYear());
+        console.log("year "+date03.getFullYear());
+
+        console.log("day "+date01.getDay());
+        console.log("day "+date02.getDay());
+        console.log("day "+date03.getDay());
+
+        console.log("hours "+date01.getHours());
+        console.log("hours "+date02.getHours());
+        console.log("hours "+date03.getHours());
+        
+        console.log("time "+date01.getTime());
+        console.log("time "+date02.getTime());
+        console.log("time "+date03.getTime());
+
+        console.log("modif "+date03.setMonth(2));
+
+
+        var november = new Date(2010,10,3);
+        november.setMonth(14);
+        console.log(november);
     </script>
 </head>
 <body>
