@@ -16,6 +16,13 @@ Penser à mettre à jour les variables qui sont testées car le while garde la d
 
 * Number() : ne prend pas la virgule, mais le point (codé par USA)
 
+* POO JS
+  * attributs : private = var monAttribut // public this.monAttrPublic
+  * methods : public = this.maFunction // private = function maFunction(){ … }
+  * En résumé : this. --> public alors que sans --> private
+
+
+
 #PHP
 * Global : va chercher une variable en dehors de la function. Définit une variable comme "globale".
 * variable dynamique : variable d'une variable ($$variable);
