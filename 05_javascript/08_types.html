@@ -24,7 +24,7 @@
         console.log(title.substring(1, 6));
 
         //DATES
-        var date01 = new Date();
+        /*var date01 = new Date();
         var date02 = new Date(1993,2,31);
         var date03 = new Date(2011,5,20,0,8,30,0,0);
         console.log("date 1 : "+date01);
@@ -52,13 +52,21 @@
         console.log("time "+date03.getTime());
 
         console.log("modif "+date03.setMonth(2));
+        */
 
 
         var november = new Date(2010,10,3);
         november.setMonth(14);
         console.log(november);
 
-        console.log("comparaison : "+date01.getTime() === date02.getTime());
+
+
+        var dateSameDay01= new Date(2015,2,20,0,0,0,0,0);
+        var dateSameDay02 = new Date(2015,2,21,0,8,30,0,0);
+
+        console.log(dateSameDay01.getTime());
+        console.log(dateSameDay02.getTime());
+
 
     </script>
 </head>
