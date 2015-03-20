@@ -14,6 +14,7 @@ Penser à mettre à jour les variables qui sont testées car le while garde la d
 
 * Return : Aucun code n'est lu après l'appel d'un return (dans une fonction ou autre)
 
+* Number() : ne prend pas la virgule, mais le point (codé par USA)
 
 #PHP
 * Global : va chercher une variable en dehors de la function. Définit une variable comme "globale".
