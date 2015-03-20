@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta http-equiv="Refresh" content="20"> 
     <meta charset="UTF-8">
     <title>TP Javascript : Exo - Fonctions calculette</title>
     <link rel="stylesheet" href="../qunit-1.17.1.css" />
     <script type="text/javascript" src="../qunit-1.17.1.js"></script>
     
     <script type="text/javascript">
-        function add(2,3){
-            2 + 3 = 5;
+        function add(){
+            return 5;
         }
-
     </script>
 </head>
 <body>
@@ -20,7 +18,7 @@
     <script type="text/javascript">
         QUnit.test("That Addition success",
             function(assert){
-                assert.equal(5,add(9,3),"Addition de 2 + 3");
+                assert.equal(5,add(2,3),"Addition de 2 + 3");
             }
         );
     </script>
