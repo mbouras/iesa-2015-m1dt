@@ -7,8 +7,9 @@
     <script type="text/javascript" src="../qunit-1.17.1.js"></script>
     
     <script type="text/javascript">
-        function add(){
-            return 5;
+        function add(numberOne, numberTwo){
+            var total = numberOne + numberTwo;
+            return total;
         }
     </script>
 </head>
@@ -18,7 +19,17 @@
     <script type="text/javascript">
         QUnit.test("That Addition success",
             function(assert){
-                assert.equal(5,add(2,3),"Addition de 2 + 3");
+                assert.equal(5,add(2),"Addition de 2 + 3");
+            }
+        );
+        QUnit.test("That function isNaN() success",
+            function(assert){
+                assert.ok(isNaN(add(2)),"Confirme qu'un seul param ça marche pas");
+            }
+        );
+        QUnit.test("That function isNaN() success",
+            function(assert){
+                assert.ok(isNaN(add(2,"hello")),"Confirme qu'un seul param ça marche pas");
             }
         );
     </script>
