@@ -25,6 +25,9 @@ Penser à mettre à jour les variables qui sont testées car le while garde la d
   * 2 speciaux : resource, null
 * Incrémentation : .=
 
+#Tests unitaires
+* Arguments dans methode equal dans un test unitaire : (valeur testée, valeur attendue, "message")
+
 
 # Console
 * Commandes sur la console du navigateur : 

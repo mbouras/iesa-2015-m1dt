@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>TP - Tests unitaires</title>
+        <link rel="stylesheet" href="../qunit-1.17.1.css">
+        <script type="text/javascript" src="../qunit-1.17.1.js"></script>
+        <script>
+            QUnit.test("Egalité vérifiée entre 2 paramètres",
+                function(assert){ assert.equal(1, 2, "1 expected"); });
+            QUnit.test("Egalité incorrecte entre 2 paramètres",
+                function(assert){ assert.equal(2, 2, "1 expected"); });
+        </script>
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture"></div>
+    </body>
+</html>
